@@ -1,6 +1,6 @@
-# E-Commerce Sales Analysis (SQL Project)
+# MySQL Sales Analysis Project
 
-This project demonstrates SQL skills by analyzing a fictional e-commerce sales database.
+This project demonstrates SQL skills by analyzing a fictional sales database in MySQL.
 
 ## Files
 - schema.sql — create tables
@@ -9,9 +9,12 @@ This project demonstrates SQL skills by analyzing a fictional e-commerce sales d
 - queries/revenue_by_country.sql — revenue by country
 - queries/monthly_sales.sql — monthly revenue
 
-## How to run
-1. Create tables: run schema.sql.
-2. Insert sample data: run sample_data.sql.
-3. Execute any query in the queries folder.
+## How to Run
+1. Run `schema.sql` in MySQL to create tables.
+2. Run `sample_data.sql` to insert data.
+3. Execute queries in the `queries/` folder to see results.
 
-Works on PostgreSQL and most SQL engines with minor changes (DATE_TRUNC is PostgreSQL).
+## Example Insights
+- Laptops are the top-selling product.
+- USA generates the highest revenue.
+- Sales peaked in February 2025.
