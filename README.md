@@ -1,20 +1,25 @@
-# MySQL Sales Analysis Project
+# Library Management System (MySQL)
 
-This project demonstrates SQL skills by analyzing a fictional sales database in MySQL.
+A relational database for managing books, members, and loans. Includes schema, sample data, and analysis queries.
+
+## What this shows
+- Database design: tables, keys, constraints
+- Business logic: loans and overdue detection
+- Analysis queries: usage, activity, and trends
 
 ## Files
-- schema.sql — create tables
-- sample_data.sql — insert sample rows
-- queries/top_products.sql — top-selling products
-- queries/revenue_by_country.sql — revenue by country
-- queries/monthly_sales.sql — monthly revenue
+- schema.sql — create the database and tables
+- sample_data.sql — insert example books, members, and loans
+- queries/most_borrowed_books.sql — book popularity
+- queries/overdue_loans.sql — overdue items
+- queries/member_activity.sql — member loan activity
 
-## How to Run
-1. Run `schema.sql` in MySQL to create tables.
-2. Run `sample_data.sql` to insert data.
-3. Execute queries in the `queries/` folder to see results.
+## How to run (MySQL)
+1. Open MySQL Workbench (or mysql CLI).
+2. Run `schema.sql` to create `library_db` and tables.
+3. Run `sample_data.sql` to insert demo data.
+4. Execute any `.sql` in `queries/` to see insights.
 
-## Example Insights
-- Laptops are the top-selling product.
-- USA generates the highest revenue.
-- Sales peaked in February 2025.
+## Notes
+- This demo reduces `copies_available` with a simple UPDATE. In production, use transactions or triggers to maintain inventory.
+- All tables use InnoDB and proper foreign keys.
